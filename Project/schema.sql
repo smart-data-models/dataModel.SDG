@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Project of the subject dataModel.SDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE plan_type AS ENUM ('EDS', 'PPE');
+CREATE TYPE Project_plan_type AS ENUM ('EDS', 'PPE');
 CREATE TYPE Project_type AS ENUM ('Project');
 CREATE TABLE Project (
   "address" JSON,
@@ -20,7 +20,7 @@ CREATE TABLE Project (
   "name" TEXT,
   "observations" TEXT,
   "owner" JSON,
-  "plan" plan_type,
+  "plan" Project_plan_type,
   "refDevice" JSON,
   "sdg" TEXT,
   "seeAlso" JSON,
